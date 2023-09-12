@@ -13,3 +13,8 @@ function descendingOrder(n: number): number {
 }
 
 console.log(descendingOrder(234));
+
+// best solution with less code
+function dscOrder(n: number): number {
+  return parseInt(n.toString().split("").sort().reverse().join(""));
+}
